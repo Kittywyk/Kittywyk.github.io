@@ -1,66 +1,54 @@
-import * as echarts from 'echarts';
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 引入 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+</html>
 
-var chartDom = document.getElementById('main');
-var myChart = echarts.init(chartDom);
-var option;
+<body>
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+</body>
 
-option = {
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    legend: {
-        data: ['负相关性', '正相关性']
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    yAxis: [
-        {
-            type: 'category',
-            axisTick: {
-                show: false
-            },
-            data: ['坡度标准差', '平均高程', '湿地', '水体', '稀疏植被', '灌木丛', '居民地','草地','裸地','农田']
-        }
-    ],
-    series: [
-        {
-            name: '正相关性',
-            type: 'bar',
-            stack: '总量',
-            label: {
-                show: true
-            },
-            emphasis: {
-                focus: 'series'
-            },
-            data: [0.043, 0.001, , 0.023, , 0.009, 0.009]
-        },
-        {
-            name: '负相关性',
-            type: 'bar',
-            stack: '总量',
-            label: {
-                show: true,
-                position: 'left'
-            },
-            emphasis: {
-                focus: 'series'
-            },
-            data: [, , -0.017, , -0.035, , ,-0.039,-0.021,-0.062]
-        }
-    ]
-};
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
 
-option && myChart.setOption(option);
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
