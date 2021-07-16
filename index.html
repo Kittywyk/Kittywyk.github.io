@@ -1,33 +1,66 @@
-<!DOCTYPE html>
+import * as echarts from 'echarts';
 
-<html>
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
 
-<head>
+option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data: ['负相关性', '正相关性']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    yAxis: [
+        {
+            type: 'category',
+            axisTick: {
+                show: false
+            },
+            data: ['坡度标准差', '平均高程', '湿地', '水体', '稀疏植被', '灌木丛', '居民地','草地','裸地','农田']
+        }
+    ],
+    series: [
+        {
+            name: '正相关性',
+            type: 'bar',
+            stack: '总量',
+            label: {
+                show: true
+            },
+            emphasis: {
+                focus: 'series'
+            },
+            data: [0.043, 0.001, , 0.023, , 0.009, 0.009]
+        },
+        {
+            name: '负相关性',
+            type: 'bar',
+            stack: '总量',
+            label: {
+                show: true,
+                position: 'left'
+            },
+            emphasis: {
+                focus: 'series'
+            },
+            data: [, , -0.017, , -0.035, , ,-0.039,-0.021,-0.062]
+        }
+    ]
+};
 
-<title>简介代码测试</title>
-
-</head>
-
-<body>
-
-<h1>我的测试网页</h1>
-
-<p align="center">Hello 大家好</p>
-
-<p style="text-decoration: line-through;">我是多余的，但是这个也是知识点，需要记下来哦 ^_^</p>
-
-<p align="center">我是麋鹿，这是我的个人网站。</p>
-
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
-
-<a href="https://www.zhihu.com/people/mi-lu-de-mi-lu-77-91" target="_blank">知乎</a>
-
-<p align="center">
-
-<img src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1006013113,2872893823&fm=26&gp=0.jpg" />
-
-</p>
-
-</body>
-
-</html>
+option && myChart.setOption(option);
