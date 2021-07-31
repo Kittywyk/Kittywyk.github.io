@@ -12,7 +12,7 @@
         p {text-indent:2em;}
     </style>
 </head>
-<body style="background-color:#100c2A;">
+<body style="background-color:#0e1116;">
 <h1 align="center">全中国范围内各影响因子的回归分析</h1>
 <p style="color:ghostwhite">我的第一个段落。</p>
 <!-- 定义图标显示区域 -->
@@ -23,11 +23,12 @@
 
 <script type="text/javascript">
     // 初始化echarts对象
-    var myChart_exForest = echarts.init(document.getElementById("main"), 'dark')
-    var myChart_exAgricu = echarts.init(document.getElementById("main_exAgr"), 'dark')
+    var myChart_exForest = echarts.init(document.getElementById("main"))
+    var myChart_exAgricu = echarts.init(document.getElementById("main_exAgr"))
 
     // 指定图表的配置项和数据
     var option1 = {
+        backgroundColor: '#0e1116',
         title: {
             text: '各影响因子的回归系数（除森林外）',
             //left: 'center',
