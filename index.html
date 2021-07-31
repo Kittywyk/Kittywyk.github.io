@@ -1,54 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <!-- 引入 ECharts 文件 -->
-    <script src="echarts.min.js"></script>
+    <meta charset="UTF-8">
+    <title>全中国范围内各影响因子的回归分析</title>
+    <!-- 引入echarts库文件 -->
+    <script src="js/echarts.js"></script>
+    <!-- 引入jQuery库文件 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <style>
+        h1 { color: #F8F9F9; }
+        p {text-indent:2em;}
+    </style>
 </head>
-</html>
+<body style="background-color:#100c2A;">
+<h1 align="center">全中国范围内各影响因子的回归分析</h1>
+<p style="color:ghostwhite">我的第一个段落。</p>
+<!-- 定义图标显示区域 -->
+<div style="width: 1250px; height: 440px">
+    <div id="main" style="width: 450px; height: 440px; left: 350px; display:inline-block"></div>
+    <div id="main_exAgr" style="width: 450px; height: 440px; left: 350px; display:inline-block"></div>
+</div>
 
-<body>
-    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="main" style="width: 600px;height:400px;"></div>
-</body>
+<script type="text/javascript">
+    // 初始化echarts对象
+    var myChart_exForest = echarts.init(document.getElementById("main"), 'dark')
+    var myChart_exAgricu = echarts.init(document.getElementById("main_exAgr"), 'dark')
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>ECharts</title>
-    <!-- 引入 echarts.js -->
-    <script src="echarts.min.js"></script>
-</head>
-<body>
-    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 600px;height:400px;"></div>
-    <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    var option1 = {
+        title: {
+            text: '各影响因子的回归系数（除森林外）',
+            //left: 'center',
+            subtext:'R\u00b2=0.546',
+            textStyle:{
+                color: '#A6ACAF'      // 标题字体的颜色（十六进制）
+            },
+            left: 'center'
+        },
+        tooltip: {
+            trigger: 'axis',
+            formatter: function (params, ticket, callback) {
+                var htmlStr = '';
+                for(var i=0;i<params.length;i++){
+                    var param = params[i];
+                    var xName = param.name;//x轴的名称
+                    var seriesName = param.seriesName;//图例名称
+                    var value = param.value;//y轴值
+                    var color = param.color;//图例颜色
 
-        // 指定图表的配置项和数据
-        var option = {
-            title: {
-                text: 'ECharts 入门示例'
-            },
-            tooltip: {},
-            legend: {
-                data:['销量']
-            },
-            xAxis: {
-                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
-            },
-            yAxis: {},
-            series: [{
-                name: '销量',
+                    if(i===0){
+                        htmlStr += xName + '<br/>';//x轴的名称
+                    }
+                    htmlStr +='<div>';
+
+                    // 具体显示的数据【字段名称：seriesName，值：value】
+                    // 这里判断一下name，如果是我们需要特殊处理的，就处理
+                    if(seriesName === '额外信息')
+                    {
+                        // 前面一条线，后面一条线【具体样式自己写】
+                        //htmlStr += '<div style="border: 1px solid #FFEB3B"></div>';
+                        htmlStr += '显著程度：' + value;
+                        htmlStr += '<div style="border: 1px solid #FFEB3B"></div>';
+                    }
+                    else{
+                        // 正常显示的数据，走默认
+                        htmlStr += '<span style="margin-right:5px;display:inline-block;width:10px;height:10px;border-radius:5px;background-color:'+color+';"></span>';
+                        htmlStr += seriesName + '：' + value;
+                    }
+
+                    htmlStr += '</div>';
+                }
+                return htmlStr;
+            }
+        },
+        legend: {
+            data: ['负', '正'],
+            bottom: "0px"
+        },
+        grid: {
+            left: '1%',
+            right: '3%',
+            bottom: '8%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        yAxis: [
+            {
+                type: 'category',
+                axisTick: {
+                    show: false
+                },
+                data: ['坡度标准差', '平均高程', '湿地', '水体', '稀疏植被', '灌木丛', '居民地','草地','裸地','农田']
+            }
+        ],
+        series: [
+            {
+                name: '正',
                 type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
-            }]
-        };
+                stack: '总量',
+                label: {
+                    show: true,
+                    position: 'right'
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [0.043, 0.001, '-', 0.023, '-', 0.008, 0.008, '-', '-', '-']
+            },
+            {
+                name: '负',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    show: true,
+                    position: 'left'
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: ['-', '-', -0.017, '-', -0.035, '-', '-',-0.039, -0.021, -0.062]
+            },
+            {
+                name: '额外信息',
+                data: ['p<0.05', '/', '/', '/', 'p<0.05', '/', '/', 'p<0.1', '/', 'p<0.01'],
+                type: 'line'
+            },
+        ]
+    };
 
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-    </script>
+    var option2 = {
+        title: {
+            text: '各影响因子的回归系数（除农田外）',
+            //left: 'center',
+            subtext:'R\u00b2=0.546',
+            textStyle:{
+                color: '#A6ACAF'      // 标题字体的颜色（十六进制）
+            },
+            left: 'center'
+        },
+        tooltip: {
+            trigger: 'axis',
+            formatter: function (params, ticket, callback) {
+                var htmlStr = '';
+                for(var i=0;i<params.length;i++){
+                    var param = params[i];
+                    var xName = param.name;//x轴的名称
+                    var seriesName = param.seriesName;//图例名称
+                    var value = param.value;//y轴值
+                    var color = param.color;//图例颜色
+
+                    if(i===0){
+                        htmlStr += xName + '<br/>';//x轴的名称
+                    }
+                    htmlStr +='<div>';
+
+                    // 具体显示的数据【字段名称：seriesName，值：value】
+                    // 这里判断一下name，如果是我们需要特殊处理的，就处理
+                    if(seriesName === '额外信息')
+                    {
+                        // 前面一条线，后面一条线【具体样式自己写】
+                        //htmlStr += '<div style="border: 1px solid #FFEB3B"></div>';
+                        htmlStr += '显著程度：' + value;
+                        htmlStr += '<div style="border: 1px solid #FFEB3B"></div>';
+                    }
+                    else{
+                        // 正常显示的数据，走默认
+                        htmlStr += '<span style="margin-right:5px;display:inline-block;width:10px;height:10px;border-radius:5px;background-color:'+color+';"></span>';
+                        htmlStr += seriesName + '：' + value;
+                    }
+
+                    htmlStr += '</div>';
+                }
+                return htmlStr;
+            }
+        },
+        legend: {
+            data: ['负', '正'],
+            bottom: "0px"
+        },
+        grid: {
+            left: '8%',
+            right: '3%',
+            bottom: '8%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        yAxis: [
+            {
+                type: 'category',
+                axisTick: {
+                    show: false
+                },
+                data: ['坡度标准差', '平均高程', '湿地', '水体', '稀疏植被', '灌木丛', '居民地','草地','森林','裸地']
+            }
+        ],
+        series: [
+            {
+                name: '正',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    show: true
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [0.049, 0.001, '-', '-', '-', 0.011, 0.023, 0.009, 0.059, 0.012]
+            },
+            {
+                name: '负',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    show: true,
+                    position: 'left'
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: ['-', '-', -0.013, -0.029, -0.029, '-', '-', '-', '-', '-']
+            },
+            {
+                name: '额外信息',
+                data: ['p<0.05', '/', '/', 'p<0.05', 'p<0.05', '/', '/', '/', 'p<0.01', '/'],
+                type: 'line'
+            },
+        ]
+    };
+
+    myChart_exForest.setOption(option1);
+    myChart_exAgricu.setOption(option2);
+
+</script>
 </body>
 </html>
