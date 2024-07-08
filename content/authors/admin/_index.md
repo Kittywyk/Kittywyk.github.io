@@ -24,7 +24,8 @@ role: Master's student in Photogrammetry and Remote Sensing
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University
+  - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing
+          Wuhan University
     url: http://www.lmars.whu.edu.cn/en/
 
 # Social network links
@@ -49,12 +50,12 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Computer Vision
-  - Remote Sensing
   - Urban Perception
+  - Remote Sensing
+  - Computer Vision
 
 education:
-  - area: MEng Photogrammetry and Remote Sensing
+  - area: M.E. in Photogrammetry and Remote Sensing, 2022-Present
     institution: Wuhan University
     date_start: 2020-09-01
     date_end: 2020-12-31
@@ -64,7 +65,7 @@ education:
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
-  - area: BSc Remote Sensing Science and Technology
+  - area: B.E. in Remote Sensing Science and Technology, 2018-2022
     institution: China University of Geosciences (Wuhan)
     date_start: 2018-09-01
     date_end: 2022-06-01
@@ -174,5 +175,4 @@ awards:
 
 ## About Me
 
-Yuankun Wang received the B.S. degree in remote sensing science and technology from China University of Geosciences, Wuhan, China, in 2022.
-She is currently working toward the M.S. degree with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS),Wuhan University,Wuhan China. Her current research interests include computer vision and deep learning. She mainly works in the area of image enhancement and domain adaptation-based object detection.
+I'm currently working toward the master's degree with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. My current research interests include urban perception and computer vision. Previously I mainly worked in the area of low-level vision and domain adaptation-based object detection.
