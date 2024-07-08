@@ -56,7 +56,7 @@ interests:
 education:
   - area: MEng Photogrammetry and Remote Sensing
     institution: Wuhan University
-    date_start: 2022-09
+    date_start: 2020-09-01
     date_end: 2020-12-31
     summary: |
       GPA: 3.67/4.00 (91.24/100)
