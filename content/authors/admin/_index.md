@@ -66,8 +66,8 @@ education:
     #   url: 'https://example.com'
   - area: BSc Remote Sensing Science and Technology
     institution: China University of Geosciences (Wuhan)
-    date_start: 2018-09
-    date_end: 2022-06
+    date_start: 2018-09-01
+    date_end: 2022-06-01
     summary: |
       GPA: 3.95/5.00
       Rank: 3/60
