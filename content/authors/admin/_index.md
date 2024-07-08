@@ -24,8 +24,8 @@ role: Master's student in Photogrammetry and Remote Sensing
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing
-          Wuhan University
+  - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing \
+  Wuhan University
     url: http://www.lmars.whu.edu.cn/en/
 
 # Social network links
@@ -153,7 +153,13 @@ awards:
     url: 
     date: '2023-12-21'
     awarder: Wuhan University
-    icon: assets/media/icons/WHU_logo.png
+    icon: WHU_logo.png
+    summary:
+  - title: 'Outstanding Individual at University Level'
+    url: 
+    date: '2024-04-01'
+    awarder: Wuhan University
+    icon: WHU_logo.png
     summary:
   - title: '3rd Prize in Huawei Cup the 20th China Post-Graduate Mathematical Contest in Modeling'
     url: https://cpipc.acge.org.cn/cw/hp/4
@@ -165,7 +171,7 @@ awards:
     url: https://contest.geoscene.cn/
     certificate_url: 
     date: '2021-06-01'
-    awarder: Chinese Society for Geodesy，Photogrammetry and Cartography
+    awarder: Chinese Society for Geodesy, Photogrammetry and Cartography
     icon: 
     summary: 
 ---
