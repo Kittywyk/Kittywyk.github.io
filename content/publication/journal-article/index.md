@@ -1,12 +1,14 @@
 ---
-title: "An example journal article"
+title: "TripleA: An Unsupervised Domain Adaptation Framework for Nighttime VRU Detection"
 authors:
 - admin
-- Robert Ford
+- Zhenfeng, Shao*
+- et al.
+
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+date: "2024-04-28T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -18,13 +20,13 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
-publication_short: ""
+publication: "*IEEE Transactions on Intelligent Transportation Systems*(under review)"
+publication_short: "T-ITS"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Detecting vulnerable road users (VRUs) at night presents significant challenges. Numerous methods rely heavily on annotations, yet the low visibility of nighttime images poses difficulties for labeling. To obviate the need for nighttime annotations, unsupervised domain adaptation manifests as a viable solution. However, existing approaches often focus solely on semantic-level domain shifts, neglecting the pixel-level discrepancies due to inherent degradations in the night domain, which can significantly impair machine vision. This oversight limits the effectiveness of nighttime VRU detection. To this end, TripleA, an unsupervised domain adaptation framework is introduced to achieve nighttime VRU detection. Realized through a crucial triple alignment, TripleA first aligns the distributions of the labeled daytime domain with the unlabeled nighttime domain. Then, the degraded image is enhanced in terms of illumination and noise. We present an illumination difference-aware denoising network to address the intractable noise and enable selfsupervised learning through a meticulously designed exchange-recombination strategy, which is integrated into a novel pseudosupervised attention to achieve noise distribution alignment. To further enhance the capabilities of the denoising network under real-world scenarios, we introduce degradation alignment to enforce domain-invariant degradation encoding. Extensive experiments demonstrate that our proposed framework achieves superior performance in nighttime VRU detection without relying on nighttime annotations.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: 
 
 tags:
 - Source Themes
@@ -33,8 +35,8 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: 
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -45,7 +47,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: ''
   focal_point: ""
   preview_only: false
 

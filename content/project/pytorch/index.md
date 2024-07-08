@@ -9,7 +9,6 @@ image:
 authors: admin
 
 tags:
-  - Hugo
 
 ---
 
