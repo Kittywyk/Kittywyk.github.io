@@ -24,8 +24,7 @@ role: Master's student in Photogrammetry and Remote Sensing
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing \
-  Wuhan University
+  - name: Wuhan University
     url: http://www.lmars.whu.edu.cn/en/
 
 # Social network links
