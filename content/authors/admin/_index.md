@@ -124,6 +124,14 @@ skills:
         description: ''
         percent: 70
         icon: devicon/matlab
+      - name: LaTeX
+        description: ''
+        percent: 85
+        icon: devicon/latex
+      - name: ArcGIS
+        description: ''
+        percent: 85
+        icon: custom/ArcGIS_logo
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -135,11 +143,11 @@ skills:
       - name: Jazz
         description: ''
         percent: 100
-        icon: 🎶
+        icon: hero/musical-note
       - name: Reading
         description: ''
         percent: 90
-        icon: 📖
+        icon: hero/book-open
 
 languages:
   - name: Chinese
@@ -156,13 +164,13 @@ awards:
     url: 
     date: '2023-12-21'
     awarder: Wuhan University
-    icon: WHU_logo.png
+    icon: custom/WHU_logo
     summary:
   - title: 'Outstanding Individual at University Level'
     url: 
     date: '2024-04-01'
     awarder: Wuhan University
-    icon: WHU_logo.png
+    icon: custom/WHU_logo
     summary:
   - title: '3rd Prize in Huawei Cup the 20th China Post-Graduate Mathematical Contest in Modeling'
     url: https://cpipc.acge.org.cn/cw/hp/4
