@@ -17,11 +17,11 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/Yuankun_Wang_CV.pdf
     design:
       css_class: dark
       background:
-        color: '#13223f'
+        color: '#243F76'
         image:
           # Add your image background to `assets/media/`.
           filename: # stacked-peaks.svg
