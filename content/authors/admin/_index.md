@@ -128,10 +128,7 @@ skills:
         description: ''
         percent: 85
         icon: devicon/latex
-      - name: ArcGIS
-        description: ''
-        percent: 85
-        icon: custom/ArcGIS_logo
+
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
