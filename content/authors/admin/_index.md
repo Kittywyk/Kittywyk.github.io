@@ -32,7 +32,7 @@ organizations:
 profiles:
   - icon: at-symbol
     url: 'mailto:ykwang@whu.edu.cn'
-    label: E-mail Me
+    label: E-mail Me (ykwang@whu.edu.cn)
   - icon: brands/x
     url: https://x.com/yk_wang_kitty
   - icon: academicons/researchgate
@@ -57,7 +57,6 @@ interests:
 education:
   - area: M.E. in Photogrammetry and Remote Sensing, 2022-Present
     institution: Wuhan University
-    contact: ykwang@whu.edu.cn
     date_start: 2020-09-01
     date_end: 2020-12-31
     summary: |
