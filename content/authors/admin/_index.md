@@ -173,14 +173,14 @@ awards:
     url: https://cpipc.acge.org.cn/cw/hp/4
     date: '2023-12-01'
     awarder: Association of Chinese Graduate Education
-    icon: 3rd_place_medal
+    icon: :heart: # 3rd_place_medal
     summary: 
   - title: '1st Prize in Esri-Cup Chinese College Students GIS Software Development Contest'
     url: https://contest.geoscene.cn/
     certificate_url: 
     date: '2021-06-01'
     awarder: Chinese Society for Geodesy, Photogrammetry and Cartography
-    icon: 1st_place_medal
+    icon: 🥇 # 1st_place_medal
     summary: 
 ---
 

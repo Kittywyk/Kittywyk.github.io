@@ -62,7 +62,7 @@ sections:
           - publication
         exclude_featured: false
     design:
-      view: compact   # 其他可选：card citation
+      view: citation   # 其他可选：card citation
   # - block: collection
   #   id: talks
   #   content:
