@@ -161,7 +161,7 @@ awards:
     url: 
     date: '2023-12-21'
     awarder: Wuhan University
-    icon: hero/book-open #hero/academic-cap
+    icon: 'hero/book-open' #hero/academic-cap
     summary:
   - title: 'Outstanding Individual at University Level'
     url: 
