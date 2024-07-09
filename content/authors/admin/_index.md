@@ -71,9 +71,9 @@ education:
     date_start: 2018-09-01
     date_end: 2022-06-01
     summary: |
-      GPA: 3.95/5.00
+      GPA: 3.95/5.00    Rank: 3/60
 
-      Rank: 3/60
+      Bachelor's Dissertation: Traffic Object Detection under Different Lighting Conditions in Intelligent Transportation Scenarios (Excellent Bachelor Dissertation Award at School Level)
 
       Courses included:
       - Probability and Statistics (96)
