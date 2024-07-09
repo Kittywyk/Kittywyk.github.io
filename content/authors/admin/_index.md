@@ -57,6 +57,7 @@ interests:
 education:
   - area: M.E. in Photogrammetry and Remote Sensing, 2022-Present
     institution: Wuhan University
+    contact: ykwang@whu.edu.cn
     date_start: 2020-09-01
     date_end: 2020-12-31
     summary: |
@@ -73,7 +74,7 @@ education:
     summary: |
       GPA: 3.95/5.00    Rank: 3/60
 
-      Bachelor's Dissertation: Traffic Object Detection under Different Lighting Conditions in Intelligent Transportation Scenarios (Excellent Bachelor Dissertation Award at School Level)
+      Bachelor's Dissertation: Traffic Object Detection under Different Lighting Conditions in Intelligent Transportation Scenarios (**Excellent Bachelor Dissertation Award at School Level**)
 
       Courses included:
       - Probability and Statistics (96)
