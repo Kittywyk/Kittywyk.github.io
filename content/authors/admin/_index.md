@@ -50,8 +50,9 @@ profiles:
 
 interests:
   - Urban Perception
-  - Remote Sensing
   - Computer Vision
+  - Remote Sensing
+
 
 education:
   - area: M.E. in Photogrammetry and Remote Sensing, 2022-Present
@@ -60,7 +61,8 @@ education:
     date_end: 2020-12-31
     summary: |
       GPA: 3.67/4.00 (91.24/100)
-      Supervised by [Prof. Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
+
+      Supervised by Prof. Zhenfeng Shao.
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
@@ -69,8 +71,10 @@ education:
     date_start: 2018-09-01
     date_end: 2022-06-01
     summary: |
-      GPA: 3.95/5.00 |
-      Rank: 3/60 |
+      GPA: 3.95/5.00
+
+      Rank: 3/60
+
       Courses included:
       - Probability and Statistics (96)
       - Linear Algebra (93)
@@ -111,15 +115,15 @@ skills:
       - name: Python
         description: ''
         percent: 90
-        icon: code-bracket
+        icon: devicon/python
       - name: C/C++
         description: ''
         percent: 80
-        icon: chart-bar
+        icon: devicon/cplusplus
       - name: MATLAB
         description: ''
         percent: 70
-        icon: circle-stack
+        icon: devicon/matlab
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -131,11 +135,11 @@ skills:
       - name: Jazz
         description: ''
         percent: 100
-        icon: music
+        icon: 🎶
       - name: Reading
         description: ''
         percent: 90
-        icon: book
+        icon: 📖
 
 languages:
   - name: Chinese
