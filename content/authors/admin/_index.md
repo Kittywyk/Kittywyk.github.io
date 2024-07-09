@@ -60,7 +60,7 @@ education:
     date_end: 2020-12-31
     summary: |
       GPA: 3.67/4.00 (91.24/100)
-      Supervised by [Prof Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
+      Supervised by [Prof. Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
@@ -69,8 +69,8 @@ education:
     date_start: 2018-09-01
     date_end: 2022-06-01
     summary: |
-      GPA: 3.95/5.00
-      Rank: 3/60
+      GPA: 3.95/5.00 |
+      Rank: 3/60 |
       Courses included:
       - Probability and Statistics (96)
       - Linear Algebra (93)
@@ -103,39 +103,39 @@ education:
 #       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-# skills:
-#   - name: Technical Skills
-#     items:
-#       - name: Python
-#         description: ''
-#         percent: 80
-#         icon: code-bracket
-#       - name: Data Science
-#         description: ''
-#         percent: 100
-#         icon: chart-bar
-#       - name: SQL
-#         description: ''
-#         percent: 40
-#         icon: circle-stack
-#   - name: Hobbies
-#     color: '#eeac02'
-#     color_border: '#f0bf23'
-#     items:
-#       - name: Hiking
-#         description: ''
-#         percent: 60
-#         icon: person-simple-walk
-#       - name: Cats
-#         description: ''
-#         percent: 100
-#         icon: cat
-#       - name: Photography
-#         description: ''
-#         percent: 80
-#         icon: camera
+Skills
+Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ''
+        percent: 90
+        icon: code-bracket
+      - name: C/C++
+        description: ''
+        percent: 80
+        icon: chart-bar
+      - name: MATLAB
+        description: ''
+        percent: 70
+        icon: circle-stack
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Hiking
+        description: ''
+        percent: 90
+        icon: person-simple-walk
+      - name: Jazz
+        description: ''
+        percent: 100
+        icon: music
+      - name: Reading
+        description: ''
+        percent: 90
+        icon: book
 
 languages:
   - name: Chinese
@@ -176,5 +176,6 @@ awards:
 ---
 
 ## About Me
+I'm a master's student currently affiliated with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. I am supervised by [Prof. Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
 
-I'm currently working toward the master's degree with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. My current research interests include urban perception and computer vision. Previously I mainly worked in the area of low-level vision and domain adaptation-based object detection.
+I have research experience in low-level vision tasks and unsupervised domain adaptation for object detection. My research interest is the combination of urban perception and computer vision.
