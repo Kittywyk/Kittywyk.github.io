@@ -161,26 +161,26 @@ awards:
     url: 
     date: '2023-12-21'
     awarder: Wuhan University
-    icon: custom/WHU_logo
+    icon: hero/academic-cap
     summary:
   - title: 'Outstanding Individual at University Level'
     url: 
     date: '2024-04-01'
     awarder: Wuhan University
-    icon: custom/WHU_logo
+    icon: hero/academic-cap
     summary:
   - title: '3rd Prize in Huawei Cup the 20th China Post-Graduate Mathematical Contest in Modeling'
     url: https://cpipc.acge.org.cn/cw/hp/4
     date: '2023-12-01'
     awarder: Association of Chinese Graduate Education
-    icon: 
+    icon: :3rd_place_medal:	
     summary: 
   - title: '1st Prize in Esri-Cup Chinese College Students GIS Software Development Contest'
     url: https://contest.geoscene.cn/
     certificate_url: 
     date: '2021-06-01'
     awarder: Chinese Society for Geodesy, Photogrammetry and Cartography
-    icon: 
+    icon: :1st_place_medal:
     summary: 
 ---
 
