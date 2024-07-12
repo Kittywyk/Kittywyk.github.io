@@ -50,8 +50,8 @@ profiles:
 
 interests:
   - Urban Perception
-  - Computer Vision
   - Remote Sensing
+  - Computer Vision
 
 
 education:
