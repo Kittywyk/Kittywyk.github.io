@@ -187,4 +187,4 @@ awards:
 ## About Me
 I'm a master's student currently affiliated with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. I am supervised by [Prof. Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
 
-I have research experience in low-level vision tasks and unsupervised domain adaptation for object detection. My research interest is the combination of urban perception and computer vision.
+I have research experience in road user perception in intelligent transportation scenarios and unsupervised domain adaptation for object detection. My current research interest is the combination of urban perception and computer vision.
