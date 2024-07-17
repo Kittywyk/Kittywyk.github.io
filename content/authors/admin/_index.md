@@ -49,9 +49,10 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Urban Perception
   - Remote Sensing
+  - Artificial Intelligence for Earth Observation
   - Computer Vision
+  - Urban Perception
 
 
 education:
@@ -187,4 +188,5 @@ awards:
 ## About Me
 I'm a master's student currently affiliated with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. I am supervised by [Prof. Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
 
-I have research experience in road user perception in intelligent transportation scenarios and unsupervised domain adaptation for object detection. My current research interest is the combination of urban perception and computer vision.
+I have research experience in road user perception in intelligent transportation scenarios and unsupervised domain adaptation for object detection. My current research interest is AI for Earth Observation.
+<!-- I have research experience in road user perception in intelligent transportation scenarios and unsupervised domain adaptation for object detection. My current research interest is the combination of urban perception and computer vision. -->
