@@ -50,7 +50,7 @@ profiles:
 
 interests:
   - Remote Sensing
-  - Artificial Intelligence for Earth Observation
+  - AI for Earth Observation
   - Computer Vision
   - Urban Perception
 
