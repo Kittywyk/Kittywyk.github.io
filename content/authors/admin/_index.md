@@ -52,7 +52,7 @@ interests:
   - Remote Sensing
   - AI for Earth Observation
   - Computer Vision
-  - Urban Perception
+  # - Urban Perception
 
 
 education:
