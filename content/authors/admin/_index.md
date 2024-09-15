@@ -49,10 +49,11 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Remote Sensing
+  - Urban Perception
   - AI for Earth Observation
   - Computer Vision
-  # - Urban Perception
+  # - Remote Sensing
+ 
 
 
 education:
