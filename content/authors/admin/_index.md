@@ -50,7 +50,7 @@ profiles:
 
 interests:
   # - Urban Perception
-  - AI for Biodiversity Monitoring
+  - AI for Climate Change
   - AI for Earth Observation
   - Computer Vision
   # - Remote Sensing
