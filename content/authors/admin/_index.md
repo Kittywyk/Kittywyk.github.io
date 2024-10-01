@@ -50,11 +50,10 @@ profiles:
 
 interests:
   # - Urban Perception
-  - AI for Climate Change
-  - AI for Earth Observation
-  - Computer Vision
-  # - Remote Sensing
- 
+  # - AI for Climate Change
+  - GeoAI
+  - Machine Learning, Deep Learning
+  - Image Processing
 
 
 education:
@@ -190,7 +189,9 @@ awards:
 ## About Me
 I'm a master's student currently affiliated with the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. I am supervised by [Prof. Zhenfeng Shao](http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/index.html).
 
-I have research experience in unsupervised domain adaptation for object detection and low-level vision. My current research interest is AI for Climate Change.
+I have research experience in low-level vision and unsupervised domain adaptation for object detection. 
+
+My research interest focuses on creating a sustainable urban future and tackling related environmental, social, and economic challenges. I particularly interested in the interface of emerging datasets such as earth observation data, street-level imagery, and crowdsourced data with the state of the art of artificial intelligence to solve contemporary urban challenges including urbanization, climate change, ecology, food security and environment.
 
 <!-- I have research experience in road user perception in intelligent transportation scenarios and unsupervised domain adaptation for object detection. My current research interest is the combination of urban perception and computer vision. -->
 
