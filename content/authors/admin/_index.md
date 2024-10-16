@@ -57,10 +57,10 @@ interests:
 
 
 education:
-  - area: M.E. in Photogrammetry and Remote Sensing, 2022-Present
+  - area: M.Sc. in Photogrammetry and Remote Sensing, 2022-Present
     institution: Wuhan University
-    date_start: 2020-09-01
-    date_end: 2020-12-31
+    date_start: 2022-09-01
+    date_end: 2025-06-01
     summary: |
       GPA: 3.67/4.00 (91.24/100)
 
@@ -75,7 +75,7 @@ education:
     summary: |
       GPA: 3.95/5.00    Rank: 3/60
 
-      Bachelor's Dissertation: Traffic Object Detection under Different Lighting Conditions in Intelligent Transportation Scenarios (**Excellent Bachelor Dissertation Award at School Level**)
+      Bachelor's Thesis: Traffic Object Detection under Different Lighting Conditions in Intelligent Transportation Scenarios (**Excellent Bachelor Thesis Award**)
 
       Courses included:
       - Probability and Statistics (96)
@@ -152,24 +152,42 @@ languages:
   - name: Chinese
     percent: 100
   - name: English
-    percent: 88
+    percent: 90
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: 'Excellent Study Scholarship'
+  - title: '2023-2024 Excellent Study Scholarship'
     url: 
-    date: '2023-12-21'
+    date: '2024-10-15'
     awarder: Wuhan University
     icon:  #hero/academic-cap
     summary:
-  - title: 'Outstanding Individual at University Level'
+  - title: 'Outstanding Graduate Student'
     url: 
-    date: '2024-04-01'
+    date: '2024-10-15'
     awarder: Wuhan University
     icon: 
+    summary:
+  - title: 'Social Activist'
+    url: 
+    date: '2024-09-01'
+    awarder: Wuhan University
+    icon: 
+    summary: 
+  - title: 'Outstanding Youth Leage Member'
+    url: 
+    date: '2023-10-01'
+    awarder: Wuhan University
+    icon: 
+    summary:
+  - title: '2022-2023 Excellent Study Scholarship'
+    url: 
+    date: '2023-10-20'
+    awarder: Wuhan University
+    icon:  #hero/academic-cap
     summary:
   - title: '3rd Prize in Huawei Cup the 20th China Post-Graduate Mathematical Contest in Modeling'
     url: https://cpipc.acge.org.cn/cw/hp/4
