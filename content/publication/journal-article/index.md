@@ -38,7 +38,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 
+url_pdf: uploads/TripleA-v2.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
