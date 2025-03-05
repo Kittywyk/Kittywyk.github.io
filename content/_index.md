@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/Yuankun_Wang_CV.pdf
+        url: uploads//FINAL VERSION.pdf
     design:
       css_class: dark
       background:
