@@ -23,7 +23,7 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*IEEE Transactions on Intelligent Transportation Systems.* (Accepted)"
+publication: "*IEEE Transactions on Intelligent Transportation Systems.* (doi=10.1109/TITS.2025.3548804)"
 publication_short:
 
 abstract: Detecting vulnerable road users (VRUs) at night presents significant challenges. Numerous methods rely heavily on annotations, yet the low visibility of nighttime images poses difficulties for labeling. To obviate the need for nighttime annotations, unsupervised domain adaptation manifests as a viable solution. However, existing approaches often focus solely on semantic-level domain shifts, neglecting the pixel-level discrepancies due to inherent degradations in the night domain, which can significantly impair machine vision. This oversight limits the effectiveness of nighttime VRU detection. To this end, TripleA, an unsupervised domain adaptation framework is introduced to achieve nighttime VRU detection. Realized through a crucial triple alignment, TripleA first aligns the distributions of the labeled daytime domain with the unlabeled nighttime domain. Then, the degraded image is enhanced in terms of illumination and noise. We present an illumination difference-aware denoising network to address the intractable noise and enable selfsupervised learning through a meticulously designed exchange-recombination strategy, which is integrated into a novel pseudosupervised attention to achieve noise distribution alignment. To further enhance the capabilities of the denoising network under real-world scenarios, we introduce degradation alignment to enforce domain-invariant degradation encoding. Extensive experiments demonstrate that our proposed framework achieves superior performance in nighttime VRU detection without relying on nighttime annotations.
@@ -38,7 +38,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: uploads/TripleA-v2.pdf
+url_pdf: uploads/TripleA.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
